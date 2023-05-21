@@ -1,0 +1,116 @@
+:root {
+    /* Colors */
+    --background-color: #202733;
+    --primary-color: #313A48;
+    --secondary-color: #53FFAA;
+    --text-primary-color: #CEE3E9;
+    --text-secondary-color: #53FFAA;
+    
+  
+    /* Font */
+    --primary-font-family: 'Manrope', sans-serif;;
+    
+
+    /* Font-Sizes */
+    --eleven-pixel-font-size: 0.6875rem;
+    --twentyfour-pixel-font-size: 1.5rem;
+  }
+  
+  h1, h2, h3 {
+    font-family: var(--primary-font-family);
+   }
+   
+   p, a {
+     font-family: var(--primary-font-family);
+   }
+
+
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background-color: var(--background-color);
+  }
+
+
+  /* ------- Main Styling Begins -------*/
+  .quote-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: var(--primary-color);
+    width: 343px;
+    margin: 7rem auto 0rem auto;
+    border-radius: 15px;
+  }
+
+  #advice-number {
+    color: var(--secondary-color);
+  }
+
+  #random-quote {
+    color: var(--text-primary-color);
+    padding: 0rem 1rem;
+  }
+  
+  .divider {
+    width: 295px;
+    height: 16px;
+  }
+  
+  .dice-outer-circle {
+    position: relative;
+    top: 2.75rem;
+  }
+
+  .dice-outer-circle button {
+    border: none;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+  }
+
+  .dice-img {
+    width: 24px;
+    height: 24px;
+    padding: 15px 12px;
+  }
+
+  .dice-outer-circle {
+    padding: 15px;
+    color: var(--secondary-color);
+    border-radius: 50%;
+  }
+
+
+  /* ------- Main Styling Ends -------*/
+
+
+  @media only screen and (min-width: 992px) {
+    .quote-container {
+      width: 540px;
+    }
+
+    .divider {
+      width: 444px;
+      height: 32px;
+    }
+
+    #random-quote {
+      font-size: 1.75rem;
+      padding: 0rem 2rem;
+    }
+
+    .dice-outer-circle button {
+      transition: all 0.2s ease-in-out;
+    }
+
+    .dice-outer-circle button:hover {
+      cursor: pointer;
+      backdrop-filter: blur(5px);
+      box-shadow: 0 10px 25px rgba(83, 255, 170, .4);
+    }
+  }
